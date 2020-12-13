@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   background: #222;
-  background: url('https://exoplanets.nasa.gov/assets/stars6.jpg');
+  background: url('./img/stars6.jpg');
   color: #ffff57;
   text-align: center;
   overscroll-behavior-y: none;
