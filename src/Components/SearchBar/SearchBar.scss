@@ -1,0 +1,19 @@
+.searchField {
+  background: rgba(255, 255, 87, 0.1);
+  width: 100%;
+  padding: 17px 30px 13px 12px;
+  margin: 0 30px 0 -30px;
+  border: none;
+  border: 2px solid rgba(255, 255, 87, 0.2);
+  color: #ffff57;
+  border-radius: 8px;
+  outline: none !important;
+  &::placeholder {
+    color: #ffff57;
+    font-size: 1.2rem;
+  }
+  &:focus {
+    transition: 0.3s;
+    border: 2px solid rgba(255, 255, 87, 0.5);
+  }
+}

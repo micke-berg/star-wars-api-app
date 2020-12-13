@@ -1,0 +1,43 @@
+.pagination {
+  text-transform: uppercase;
+  width: 720px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(189, 186, 186, 0.05);
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 87, 0.9);
+  background-clip: padding-box;
+  border-radius: 12px;
+  padding: 16px 0;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 87, 0.9);
+  button {
+    margin: 0 16px;
+    background: transparent;
+    background: rgba(255, 255, 87, 0.1);
+    text-transform: uppercase;
+    border: 2px solid rgba(255, 255, 87, 0.5);
+    background-clip: padding-box;
+    border-radius: 8px;
+    padding: 12px 24px;
+    color: rgba(255, 255, 87, 0.9);
+    font-size: 1.3em;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+  }
+  button:hover {
+    color: rgba(255, 255, 87, 1);
+    text-shadow: 0 1px 12px rgba(255, 255, 87, 1);
+  }
+  button:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
+}
+
+.page-number {
+  padding: 0 20px;
+  font-size: 1.2rem;
+}

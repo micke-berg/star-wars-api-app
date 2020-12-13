@@ -1,0 +1,98 @@
+.list-item {
+  height: 100%;
+  padding: 8px 16px;
+  background: rgba(189, 186, 186, 0.05);
+  backdrop-filter: blur(1px);
+  border: 1px solid transparent;
+  border: 1px solid rgba(255, 255, 87, 0.9);
+  background-clip: padding-box;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  cursor: pointer;
+
+  p {
+    margin: 6px 0;
+    color: #ffff57;
+  }
+  h2 {
+    margin: 12px 0 18px 0;
+    color: #ffff57;
+    color: rgba(255, 255, 87, 0.9);
+    transition: 0.2s;
+  }
+  .list-item-info-parent {
+    height: 0;
+    overflow-y: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  .list-item-info {
+    padding-bottom: 18px;
+  }
+  :hover {
+    transition: 0.15s;
+    color: rgba(255, 255, 87, 1);
+    text-shadow: 0 1px 13px rgba(255, 255, 87, 0.1);
+  }
+}
+
+.beam {
+  margin: 10px 0 3px 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(50, 100, 255, 0.5);
+  border-radius: 50px 50px;
+  box-shadow: 0 -3px 30px 4px rgba(0, 100, 255, 0.4),
+    -10px 3px 50px 5px rgba(0, 100, 255, 0.6),
+    -10px -3px 100px 5px rgba(0, 100, 255, 0.4);
+  animation: subBeam 10000ms ease-in-out infinite alternate;
+}
+
+@keyframes subBeam {
+  0% {
+    background: rgba(50, 100, 255, 0.8);
+    box-shadow: 0 -5px 30px 5px rgba(0, 100, 255, 0.45);
+  }
+  10% {
+    background: rgba(50, 100, 255, 0.8);
+    box-shadow: 0 -5px 30px 6px rgba(0, 100, 255, 0.6);
+  }
+  20% {
+    background: rgba(50, 100, 255, 0.8);
+    box-shadow: 0 -5px 30px 7px rgba(0, 100, 255, 0.5);
+  }
+  30% {
+    background: rgba(50, 100, 255, 0.8);
+    box-shadow: 0 -5px 30px 5px rgba(0, 100, 255, 0.6);
+  }
+  40% {
+    background: rgba(50, 255, 100, 0.8);
+    box-shadow: 0 -5px 30px 5px rgba(0, 255, 100, 0.45);
+  }
+  50% {
+    background: rgba(50, 255, 100, 0.8);
+    box-shadow: 0 -5px 30px 4.5px rgba(0, 255, 100, 0.55);
+  }
+  60% {
+    background: rgba(50, 255, 100, 0.8);
+    box-shadow: 0 -5px 30px 6px rgba(0, 255, 100, 0.45);
+  }
+  70% {
+    background: rgba(50, 255, 100, 0.8);
+    box-shadow: 0 -5px 30px 5px rgba(0, 255, 100, 0.6);
+  }
+  80% {
+    background: rgba(255, 100, 50, 0.8);
+    box-shadow: 0 -5px 30px 7px rgba(255, 0, 50, 0.55);
+  }
+  90% {
+    background: rgba(255, 100, 50, 0.8);
+    box-shadow: 0 -5px 30px 5px rgba(255, 0, 50, 0.45);
+  }
+  100% {
+    background: rgba(255, 100, 50, 0.8);
+    box-shadow: 0 -5px 30px 6px rgba(255, 0, 50, 0.65);
+  }
+}
