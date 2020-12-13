@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from "axios";
-import './App.css';
+import './App.scss';
 import List from './Components/List/List';
 import Spinner from './Components/Spinner/Spinner';
 import Pagination from './Components/Pagination/Pagination';
