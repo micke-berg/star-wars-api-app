@@ -4,3 +4,7 @@
 React app. Using Star Wars API to get and list movie characters. 
 
 Some animation. Pagination, and search functionality.
+
+## Misc
+
+[linkedin](https://www.linkedin.com/in/mickeberg/)
